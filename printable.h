@@ -9,8 +9,8 @@
  * може виводити інформацію про себе у нашій програмі.
  */
 class Printable {
-public:
-    virtual void print() const = 0;
+	public:
+	    virtual void print() const = 0;
 };
 
 #endif // PRINTABLE_H

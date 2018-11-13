@@ -1,8 +1,11 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 #include "printable.h"
+#include "employee.h"
 
+using namespace std;
 /*
  * Функція print друкує інформацію про кожен об'єкт у списку. Ідея полягає у тому, що функція
  * працює з нащадками класу Printable, який є базовим класом для всіх об'єктів, які можуть
@@ -57,9 +60,16 @@ int main()
     // та перевизначіть метод print(). У цьому методі виведіть усю доступну про офіс
     // інформацію у консоль.
 
-    std::vector<Printable *> employeesToPrint;
+    
 
     // Створіть об'єкти Employee та наповніть список тут....
+
+    Employee emp1("iamnotaskynet", "(555)-555-555", "Brighton Beach", 5000, 2019);
+    Printable *p1 = &emp1;
+    Employee emp2("Vasyl", "067-222-111", "Lviv", 1000, 2018);
+    Employee emp3("Ivan", "044-123-123", "Kiev", 500, 2020);
+
+    std::vector<Printable *> employeesToPrint{p1};
 
     printList(employeesToPrint);
 

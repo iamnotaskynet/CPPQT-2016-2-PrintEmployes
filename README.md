@@ -1,5 +1,7 @@
 # CPPQT-2016-2-PrintEmployes
 
+## TODO: doesn't compile properly, half the way of task
+
  ЗАВДАННЯ:                                                                                
  ---------                                                                                
  1. Створіть новий клас Employee (працівник) та додайте до нього методи                   
